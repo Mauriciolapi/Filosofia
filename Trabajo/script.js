@@ -89,7 +89,7 @@ function mostrarError(svg) {
             setTimeout(() => {
                 document.getElementById("devil").style.opacity = "1";
                 setTimeout(() => {
-                    location.href = "../hacking/index.html";   
+                    location.href = "../Hacking/index.html";   
                 }, 1000);
             }, 400);
             errorTimeout = setTimeout(function () {
