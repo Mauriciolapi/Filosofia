@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b9577afa32.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        @font-face {
+            font-family: Title;
+            src: url(Chomsky.otf);
+        }
+
+        * {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        *::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            height: 155vh;
+            width: 100vw;
+            background-color: white;
+        }
+
+        .header {
+            display: flex;
+            height: 7.5vh;
+            width: 100vw;
+            background-color: white;
+            font-family: Title;
+            font-size: 5vh;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 5px black double;
+            margin-bottom: 5vh;
+        }
+
+        .left {
+            position: absolute;
+            left: 10vw;
+            height: 100vh;
+            width: 20vw;
+        }
+
+        .middle {
+            position: absolute;
+            left: 30vw;
+            height: 100vh;
+            width: 40vw;
+        }
+
+        .right {
+            position: absolute;
+            left: 70vw;
+            height: 100vh;
+            width: 20vw;
+        }
+
+        article {
+            margin-top: 5vh;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            left: 1vw;
+            height: 40vh;
+            border-bottom: 2px black solid;
+        }
+
+        .middle>article {
+            width: 38vw;
+        }
+
+        .right,
+        .left>article {
+            width: 18vw;
+        }
+
+        article>h2 {
+            font-size: 3vh;
+            text-align: center;
+        }
+
+        article>h2:hover {
+            cursor: pointer;
+        }
+
+        article>p {
+            font-size: 1.5vh;
+            text-align: left;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+
+        .popUp {
+            position: sticky;
+            height: 40vh;
+            width: 50vw;
+            top: 30vh;
+            left: 25vw;
+            background-color: rgb(60, 60, 60);
+            border-radius: 10px;
+            overflow: hidden;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            padding: 3vh;
+        }
+
+        .popUp>p {
+            font-size: large;
+        }
+
+        .popUp>h2 {
+            font-size: 3vh;
+            margin-bottom: 1vh;
+        }
+
+        .closeCross {
+            position: absolute;
+            color: white;
+            top: 1vh;
+            left: 1vh;
+        }
+
+        .closeCross:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <i class="fa-solid fa-bars" style="position: absolute; left: 5vw; font-size: 3vh;"></i>
+        <p>The Ohio Times</p>
+        <i class="fa-solid fa-magnifying-glass" style="position: absolute; right: 5vw; font-size: 3vh;"></i>
+    </header>
+
+    <div class="left">
+        <article>
+            <h2>Líderes Mundiales se Unen para Abordar la Crisis Climática</h2>
+            <br>
+            <p>En una histórica reunión de naciones, líderes políticos de todo el mundo se congregaron en Ginebra esta
+                semana para una cumbre trascendental destinada a abordar la creciente crisis climática.</p>
+            <br>
+            <p>Elogiado como el esfuerzo internacional más completo para combatir el cambio climático, vio a Lideres de
+                Estado participar en discusiones francas, proponiendo audaces iniciativas para reducir las emisiones de
+                gases de efecto invernadero y promover prácticas sostenibles.</p>
+        </article>
+        <article>
+            <h2>Alianzas globales emergentes forjan un nuevo camino en medio de una dinámica mundial cambiante</h2>
+            <br>
+            <p>En un mundo en constante evolución, donde las dinámicas internacionales se reconfiguran rápidamente,
+                emergen alianzas globales inéditas. Este fenómeno ha sido evidente en un reciente cónclave diplomático
+                que reunió a líderes de diversas naciones en Nueva York.</p>
+        </article>
+        <article>
+            <h2>Festival de Fuegos Artificiales de Nueva York Deslumbra al Mundo</h2>
+            <br>
+            <p>En una noche despejada que dejó al público boquiabierto, el Festival de Fuegos Artificiales de Nueva York
+                iluminó el cielo de la ciudad de los rascacielos con una exhibición espectacular.</p>
+        </article>
+    </div>
+    <div class="middle">
+        <article>
+            <img src="UN Photo.jpg" alt="">
+        </article>
+        <article>
+            <img src="IMG 2.jpg" alt="">
+        </article>
+        <article>
+            <img src="fireworks.webp" alt="">
+        </article>
+    </div>
+    <div class="right">
+        <article>
+            <p>En medio de crecientes preocupaciones sobre los impactos devastadores del cambio climático, líderes de
+                diversos orígenes políticos dejaron de lado sus diferencias para explorar soluciones colaborativas. Se
+                presentaron debates exhaustivos sobre energía renovable, deforestación y la necesidad urgente de
+                cooperación internacional.</p>
+            <br>
+            <p>A pesar de los desafíos que persisten, el ambiente en la cumbre se caracterizó por un sentido de
+                responsabilidad colectiva y un compromiso compartido para preservar el planeta para las generaciones
+                futuras. Activistas ambientales, científicos y líderes políticos están unidos en esta causa.</p>
+        </article>
+        <article>
+            <p>Los debates trascendentales se centraron en cuestiones que abarcan desde el comercio internacional hasta
+                la seguridad global. Mientras las alianzas tradicionales se tambalean, estas nuevas colaboraciones están
+                tomando forma, desafiando la ortodoxia diplomática. Figuras destacadas, como el Secretario de Estado de
+                EE. UU. y su homólogo chino, se unieron para discutir temas de preocupación mutua.</p>
+            <br>
+            <p>Los observadores notan que esta convergencia de intereses inusual podría redefinir las relaciones
+                internacionales y dar forma a las políticas globales en el futuro. A medida que los líderes continúan
+                explorando territorio diplomático no convencional, el mundo observa con interés, consciente de que estos
+                eventos podrían marcar un punto de inflexión en la geopolítica moderna.</p>
+        </article>
+        <article>
+            <p>Este festival anual de fuegos artificiales, conocido por su grandeza y extravagancia, no defraudó en su
+                promesa de deslumbrar a los asistentes. El espectáculo, coreografiado meticulosamente y acompañado de
+                una banda sonora única, rindió homenaje a la rica historia y diversidad de la ciudad de Nueva York.</p>
+            <br>
+            <p>Las explosiones de colores y patrones, que se reflejaron en las aguas del río Hudson, mantuvieron a la
+                multitud en vilo. Desde los fuegos artificiales que evocaban los rascacielos hasta los diseños que
+                celebraban la diversidad cultural de la ciudad, cada momento era una obra de arte en movimiento.</p>
+        </article>
+    </div>
+    <div class="popUp" id="popUp" style="display: none;">
+        <i class="fa-solid fa-x closeCross" id="closeCross"></i>
+        <h2 style="text-align: center;">Privacidad</h2>
+        <br>
+        <p>Muchos sitos como estos se aprovechan de la ignorancia de los usuarios para violar su privacidad y tomar información de los mismos
+            aplicando algoritmos a la misma con el objetivo de mantener el interés de los usuario y poder de esta manera
+            obtener mas información que comerciar con otros sitos que el usuario frecuenta. Esto puede ser utilizado
+            para mostrar contenido especifico dependiendo de las cualidades y características del usuario.
+        </p>
+        <br>
+        <br>
+        <br>
+        <h2 style="text-align: center;">Transparencia e Imparcialidad</h2>
+        <br>
+        <p>La falta de transparencia por parte de estos sitios suele ser atribuida al conflicto de intereses entre los
+            diseñadores de estos sitios y los inversores de los mismos llevando a una dudosa imparcialidad,
+            especialmente relacionada a situaciones políticas que plaga la
+            industria actualmente.</p>
+    </div>
+</body>
+<script>
+    articles = document.getElementsByTagName('article');
+    for (var i = 0; i < articles.length; i++) {
+        articles[i].addEventListener('click', function () {
+            document.getElementById("popUp").style.display = "block"
+        });
+    }
+    document.getElementById("closeCross").addEventListener("click", function () {
+        document.getElementById("popUp").style.display = "none"
+    })
+</script>
+
+</html>

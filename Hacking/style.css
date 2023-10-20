@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-user-drag: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(/Hacking/source/hack.gif);
+}
+
+.container{
+    width: 30vw;
+    min-height: 70vh;
+    box-shadow: 0px 0px 20px -1px black;
+    backdrop-filter: blur(10px);
+    filter: brightness(200%);
+}
+
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container > div > div{
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 1.4em;
+}
+
+.container > div > div > img{
+    user-select: none;
+    width: 15vw;
+}
+
+.container > div > div:nth-child(1){
+    padding-bottom: 0px;
+}
+
+.virus{
+    min-width: max-content;
+    min-height: max-content;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.virus:hover{
+    color: red;
+}
+
+.virus > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 4em;
+}
+
+.shield{
+    min-width: max-content;
+    min-height: max-content;
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.shield:hover{
+    color: rgb(60, 60, 221);
+}
+
+.shield > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 4em;
+}
+
+.question{
+    min-width: max-content;
+    min-height: max-content;
+    position: absolute;
+    top: 18%;
+    right: 1%;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.question:hover{
+    color: rgb(230, 132, 20);
+}
+
+.question > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 4em;
+}
+
+.virusInfo{
+    position: absolute;
+    top: 5%;
+    right: 6%;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    width: 30vw;
+    min-height: 40vh;
+    backdrop-filter: blur(50px);
+    filter: brightness(500%);
+    z-index: 3;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.shieldInfo{
+    position: absolute;
+    top: 13%;
+    right: 6%;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    width: 30vw;
+    min-height: 40vh;
+    backdrop-filter: blur(50px);
+    filter: brightness(500%);
+    z-index: 3;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.questionInfo{
+    position: absolute;
+    top: 21%;
+    right: 6%;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    width: 30vw;
+    min-height: 40vh;
+    backdrop-filter: blur(50px);
+    filter: brightness(500%);
+    z-index: 3;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.shieldInfo > div, .virusInfo > div, .questionInfo > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40vh;
+    width: 100%;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 40px;
+}
+
+.shieldInfo > i, .virusInfo > i, .questionInfo > i{
+    position: fixed;
+    font-size: 2em;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+    color: red;
+    border-color: red;
+}
+
+
+.questionInfo > div > i{
+    font-size: 5em;
+}

@@ -1,0 +1,13 @@
+Orden/instrucciones para la presentación de Rechazo del Trabajo Inmoral o No Ético:
+
+1) Clickear en alguno de los 12 trabajos (cada uno contiene una descripción diferente sobre el mismo)
+2) Una vez seleccionado el trabajo deseado se podrá clickear en 2 botones (Comenzar y Rechazar). "Comenzar" tiene una animación con un emoji que "Juzga" lo ético del trabajo y a continuación le aparecerá un cartel explicando por qué es inmoral y no ético lo que se está haciendo. Por otra parte cuando se clickea "Rechazar" aparecé un emoji feliz.
+3) Todos los trabajos tienen esta funcionalidad por igual menos el trabajo numero 2, que al apretar el boton de "Comenzar" lo redireccionará a la página de Hacking ético.
+
+Orden/instrucciones para la presentación de Hacking ético:
+
+1) Se encontrará con información que explica lo que es el "Hacking Ético".
+2) Luego, arriba a la derecha le aparecerán 3 botones. 
+	a- El primero es un "Virus", una vez clickeado saltará una ventana explicando los diferentes tipos de atacantes en ciberseguridad e información sobre ellos. 
+	b- El segundo es un "Escudo", aquí se explicará lo que implica ser un "White Hat" y las herramientas que utilizan para combatir las amenazas.
+	c- El tercero es un signo de pregunta, aquí se encontrarán las razones por las cuales el hacking es una práctica no ética (Sin contar a los "White Hat"). 

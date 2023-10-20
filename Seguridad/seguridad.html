@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>filosofia</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <div id="container" class="container">
+        <h1>eVrou</h1>
+        <h2>Ingreso de Ususario</h2>
+        <div>
+            <p for="">Pais</p>
+            <select name="" id="">
+                <option value="">
+                    Uruguay
+                </option>
+            </select>
+        </div>
+        <div>
+            <p for="">Tipo de documento</p>
+            <select name="" id="">
+                <option value="">C. I.</option>
+            </select>
+        </div>
+        <div>
+            <p for="">N° de Documento</p>
+            <input type="text">
+        </div>
+        <div>
+            <p for="">Contraseña</p>
+            <input type="text">
+        </div>
+        <div>
+            <p class="olvido">¿Olvidó su Contraseña?</p>
+        </div>
+        <div class="ingresar">
+            Ingresar
+        </div>
+    </div>
+    <div id="alerta" class="oculto">Clickea el formulario</div>
+    <div id="mensaje" class="oculto">
+        <span class="cuidado">¡Cuidado!</span>
+        <p>Esta pagina se esta intentando hacer pasar por el login de un banco, podrian usar la informacion que ingreses
+            para robarte. Por eso es importante tener cuidado y prestar atención a las paginas a las que ingresamos.</p>
+        <article>
+            <section>
+                <h3>Transparencia y Honestidad</h3>
+                <p>Las páginas de phishing son creadas por programadores que no siguen el principio de ser transparentes
+                    y
+                    honestos. Estos programadores engañan a las personas haciéndolas creer que están en un sitio web
+                    legítimo,
+                    cuando en realidad tienen malas intenciones. En el mundo de la tecnología, la honestidad y la
+                    transparencia
+                    son muy importantes. La transparencia significa explicar cómo funciona algo de manera clara para que
+                    todos
+                    lo entiendan. Los programadores éticos documentan su trabajo y no ocultan cosas a propósito.</p>
+                <p>La honestidad significa hacer las cosas de manera correcta, sin esconder trucos maliciosos. Los
+                    programadores
+                    éticos no engañan a la gente ni esconden cosas malas en su trabajo. También protegen los datos de
+                    las
+                    personas y explican cómo se usan. Estos principios son esenciales para mantener seguros a los
+                    usuarios en
+                    línea y construir confianza en la tecnología. Promover estos valores éticos es importante para crear
+                    un
+                    mundo digital en el que las personas puedan confiar y compartir sin miedo a ser engañadas o
+                    estafadas.</p>
+            </section>
+            <section class="ultimo">
+                <h3 class="titulo">Seguridad</h3>
+                <p>
+                    Los programadores tienen una responsabilidad ética y profesional fundamental en la creación y
+                    mantenimiento de sistemas informáticos seguros. La seguridad de los datos y la protección de la
+                    privacidad de los usuarios son principios inquebrantables que deben guiar su trabajo. El respeto por
+                    la confianza depositada en ellos por los usuarios es esencial. Cualquier intento de utilizar
+                    habilidades de programación para fines maliciosos va en contra de estos principios y es inaceptable
+                    en el campo de la informática.</p>
+                <p>En un mundo donde la información es un activo valioso, la ética profesional de los programadores se
+                    convierte en un pilar esencial para garantizar la confianza y la integridad de los sistemas. Los
+                    profesionales de la programación deben esforzarse por promover la seguridad en línea y colaborar con
+                    expertos en ciberseguridad para proteger la información sensible de los usuarios. La formación
+                    continua y la actualización de sus conocimientos en seguridad cibernética son parte integral de su
+                    deber ético. La integridad y la transparencia en su trabajo no solo son un reflejo de su competencia
+                    profesional, sino también un compromiso con la protección de la sociedad en un entorno cada vez más
+                    digital.</p>
+            </section>
+        </article>
+        <div class="botones">
+            <a href="/index.html" class="boton">Volver</a>
+            <span id="cerrar" class="boton">Cerrar</span>
+        </div>
+    </div>
+</body>
+
+<script>
+    let abierto = false;
+    var alerta = document.getElementById("alerta");
+    var mostrarMensaje = document.getElementById("box");
+    var mensaje = document.getElementById("mensaje");
+
+    mostrarMensaje.addEventListener("click", function () {
+        mensaje.classList = 'visible';
+        alerta.classList = 'oculto';
+        abierto = true;
+    });
+
+    var cerrar = document.getElementById("cerrar");
+
+    cerrar.addEventListener("click", function () {
+        mensaje.classList = 'oculto';
+    });
+
+    function mostrarMensajeDeErrorDespuesDe15Segundos() {
+        setTimeout(function () {
+            if (abierto == false) {
+                alerta.classList = 'alerta';
+            }
+        }, 10000); // 15000 milisegundos = 15 segundos
+    }
+    mostrarMensajeDeErrorDespuesDe15Segundos();
+</script>
+
+
+</html>
